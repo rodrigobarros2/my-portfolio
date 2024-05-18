@@ -7,6 +7,7 @@ export default function Home() {
     <div className="mx-auto px-5 py-5">
       <Profile />
       <CardAboutMe />
+      <CardAboutMe />
       {/* <Navbar /> */}
     </div>
   );

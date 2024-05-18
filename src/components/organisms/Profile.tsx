@@ -1,10 +1,11 @@
 import Image from "next/image";
 import UserImage from "@/assets/image.png";
 import { FaCloudDownloadAlt } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 export function Profile() {
   return (
-    <div className="w-full mx-auto minfo__sidebar__wrapper xl:fixed xl:top-1/2 xl:left-4 2xl:left-14 xl:-translate-y-1/2 md:max-w-sidebar xl:max-2xl:max-w-xs z-999">
+    <div className="w-full mx-auto minfo__sidebar__wrapper xl:fixed xl:top-1/2 xl:left-4 2xl:left-14 xl:-translate-y-1/2 md:max-w-sidebar xl:max-2xl:max-w-xs z-999 [clip-path:polygon(55%_0,_62%_7%,_100%_7%,_100%_70%,_100%_100%,_50%_100%,_0_100%,_0%_70%,_0%_35%,_0_0)]">
       <div className="p-3 mb-3 overflow-hidden minfo__sidebar bg-white dark:bg-nightBlack rounded-2xl">
         <div className="mx-4 mt-12 text-center user-info lg:mx-6">
           <a
@@ -20,6 +21,28 @@ export function Profile() {
           <h6 className="mb-1 text-lg font-semibold text-black dark:text-white name">
             Brown Reddick
           </h6>
+          <div className="text-sm cd-words-wrapper designation text-theme after:!bg-theme">
+            <TypeAnimation
+              sequence={[
+                "Desenvolvedor",
+                1000, // Waits 1s
+                "Desenvolvedor Front-End",
+                1000, // Waits 2s
+                "Desenvolvedor Back-End",
+                1000, // Waits 2s
+                "Desenvolvedor",
+                () => {},
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              style={{
+                fontSize: "1.2em",
+                display: "inline-block",
+                color: "#00bc91",
+              }}
+            />
+          </div>
         </div>
         <div className="pt-6 mx-4 border-t lg:mx-6 user-meta-info md:mx-7 my-7 border-platinum dark:border-metalBlack">
           <ul className="space-y-3">
