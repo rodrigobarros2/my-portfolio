@@ -23,6 +23,12 @@ const config: Config = {
         themeHoverColor: " #069c7a",
         themeColor: "#00bc91",
       },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
     },
   },
   plugins: [],

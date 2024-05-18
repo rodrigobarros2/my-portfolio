@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { TypeAnimation } from "react-type-animation";
 
 export function ReactTypeAnimation() {
@@ -6,11 +6,11 @@ export function ReactTypeAnimation() {
     <TypeAnimation
       sequence={[
         "Desenvolvedor",
-        1000, // Waits 1s
+        1000,
         "Desenvolvedor Front-End",
-        1000, // Waits 2s
+        1000,
         "Desenvolvedor Back-End",
-        1000, // Waits 2s
+        1000,
         "Desenvolvedor",
         () => {},
       ]}

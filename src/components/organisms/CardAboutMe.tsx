@@ -1,5 +1,6 @@
 import { Card } from "@/components/molecules/Card";
 import { FaCheckDouble, FaHome, FaPaperPlane } from "react-icons/fa";
+import { CarrouselContinuous } from "@/components/atoms/CarrouselContinuous";
 
 export function CardAboutMe() {
   return (
@@ -13,18 +14,6 @@ export function CardAboutMe() {
       secondDescription="Essa é depois do texto em branco"
     >
       <div className="text-content pt-7 lg:pt-8 max-lg:max-w-[30rem]">
-        <h1 className="text-[32px] lg:text-5xl xl:text-4xl 2xl:text-5xl font-semibold text-black dark:text-white leading-1.27 lg:leading-1.27 xl:leading-1.27 2xl:leading-1.27 mb-4 lg:mb-5">
-          Eu faço o <br />
-          <span className="text-theme">Paisagem Digital</span>
-        </h1>
-        <p>
-          Sou um{" "}
-          <span className="font-medium text-black dark:text-white/90">
-            Desenvolvedor front-end
-          </span>{" "}
-          de coração e crio os recursos mais adequados para o trabalho em
-          questão.
-        </p>
         <ul className="flex items-center mt-4 -mx-3 lg:mt-5">
           <li className="flex items-center mx-3 text-regular">
             <FaCheckDouble />
@@ -47,6 +36,7 @@ export function CardAboutMe() {
           </li>
         </ul>
       </div>
+      <CarrouselContinuous />
     </Card>
   );
 }
