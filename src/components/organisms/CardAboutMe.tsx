@@ -1,5 +1,4 @@
 import { Card } from "@/components/molecules/Card";
-
 import { FaCheckDouble, FaHome, FaPaperPlane } from "react-icons/fa";
 
 export function CardAboutMe() {

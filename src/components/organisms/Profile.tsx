@@ -1,7 +1,7 @@
 import Image from "next/image";
 import UserImage from "@/assets/image.png";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import { TypeAnimation } from "react-type-animation";
+import { ReactTypeAnimation } from "@/components/atoms/reactTypeAnimation";
 
 export function Profile() {
   return (
@@ -22,26 +22,7 @@ export function Profile() {
             Brown Reddick
           </h6>
           <div className="text-sm cd-words-wrapper designation text-theme after:!bg-theme">
-            <TypeAnimation
-              sequence={[
-                "Desenvolvedor",
-                1000, // Waits 1s
-                "Desenvolvedor Front-End",
-                1000, // Waits 2s
-                "Desenvolvedor Back-End",
-                1000, // Waits 2s
-                "Desenvolvedor",
-                () => {},
-              ]}
-              wrapper="span"
-              cursor={true}
-              repeat={Infinity}
-              style={{
-                fontSize: "1.2em",
-                display: "inline-block",
-                color: "#00bc91",
-              }}
-            />
+            <ReactTypeAnimation />
           </div>
         </div>
         <div className="pt-6 mx-4 border-t lg:mx-6 user-meta-info md:mx-7 my-7 border-platinum dark:border-metalBlack">
