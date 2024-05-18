@@ -1,7 +1,7 @@
 import Image from "next/image";
 import UserImage from "@/assets/image.png";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import { ReactTypeAnimation } from "@/components/atoms/reactTypeAnimation";
+import { ReactTypeAnimation } from "@/components/atoms/ReactTypeAnimation";
 
 export function Profile() {
   return (
